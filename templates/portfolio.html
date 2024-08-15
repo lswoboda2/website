@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		<title>Leon Swoboda - Resume</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="/" class="title">Leon Swoboda</a>
+				<nav>
+					<ul>
+						<li><a href="/">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Projects</h1>
+							<h2>Statistical Research Assistant</h2>
+							<ul>
+								<li>Utilised R and Python to perform sophisticated data cleaning, analysis, and visualization on over 10,000 data points, revealing critical ecological patterns and trends.</li>
+								<li>Designed advanced ARIMA time-series models to predict marine plankton population trends, enhancing model precision by reducing Akaike and Bayesian Information Criterion (AIC/BIC) scores by over 350 points compared to automatically fitted models.</li>
+								<li>Created a correlation matrix using R to map the relationships between plankton types, and performed linear regression to accurately forecast their future interspecies population dynamics.</li>
+								<li>Developed an interactive web application using R and Shiny (<a href="https://lswoboda.shinyapps.io/CorrMatrix/">Correlation and Linear Regression Analysis</a> and <a href="https://lswoboda.shinyapps.io/TimeSeries/">Time Series Analysis</a>) that facilitates user-driven exploration of plankton data, offering tools for correlation analysis, linear regression, and future trend forecasting through sophisticated time-series modeling.</li>
+								<li>Collaborated with a multidisciplinary team consisting of faculty and students to integrate research findings into a new coursework module about the history and future of data (<a href="https://drive.google.com/file/d/1AMeFnTMvHMZ7P7QNil5FylyqoJn1BFSd/view?usp=sharing">Statistical Report</a>).</li>
+							</ul>
+							<h2>Password Strength Checker</h2>
+							<ul>
+								<li>Utilised SHA-1 hashing to anonymize password data during API checks, accurately and safely identifying compromised passwords from a database of over 900 million unique entries.</li>
+								<li>Automated the process of checking password security for large datasets by iterating through CSV files with 1000+ entries using Pandas, significantly reducing manual effort.</li>
+								<li>Incorporated robust error handling mechanisms to manage API request failures, improving the script's reliability and user experience.</li>
+								<li>Achieved efficient processing by splitting and checking password hashes in less than 0.5 seconds per entry.</li>
+								<li>Designed the script to be user-friendly, allowing users to input file paths and receive immediate, actionable security feedback.</li>
+							</ul>
+							<h2>Web Scraper</h2>
+							<ul>
+								<li>Created a web scraper using Python for Hacker News that automated the collection of top-tier posts from over 200 entries across multiple pages, ensuring only the most relevant content with external links and top votes are displayed.</li>
+								<li>Utilised BeautifulSoup to parse HTML and extract relevant job posting information from Hacker News' monthly "who is hiring?" posts, ensuring accurate data retrieval from dynamic web content.</li>
+								<li>Used the scraped data to identify and rank the most in-demand programming languages based on frequency of mentions, providing insights into current industry needs.</li>
+							</ul>
+							<h2>Image Classifier</h2>
+							<ul>
+								<li>Developed a Python-based image classification system that enables users to input images and receive the top 5 predictions along with corresponding probabilities, providing insights into the likely subject of each image.</li>
+								<li>Utilised Google's convolutional neural network Inceptionv3, capable of identifying objects in images with up to 97% accuracy.</li>
+								<li>Automated the prediction process by integrating the classification code into a batch processing script, allowing the classification of hundreds of images in a single run.</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/static/assets/js/browser.min.js"></script>
+			<script src="/static/assets/js/breakpoints.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
+			<script src="/static/assets/js/main.js"></script>
+
+	</body>
+</html>
